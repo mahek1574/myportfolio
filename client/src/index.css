@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    color-scheme: dark;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-[#111111] text-[#F3F0EA] font-sans antialiased selection:bg-[#D6A85F]/30 selection:text-[#D6A85F] overflow-x-hidden;
+  }
+  
+  
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #111111;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #262626;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #D6A85F;
+  }
+}
+
+@layer utilities {
+  .bg-grid-pattern {
+    background-size: 40px 40px;
+    background-image: 
+      linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  }
+  
+  .glass-card {
+    @apply bg-[#1A1A1A]/90 backdrop-blur-md border border-[#262626] shadow-lg;
+  }
+
+  .glass-card-hover {
+    @apply transition-all duration-300 hover:border-[#D6A85F]/50 hover:shadow-[0_0_25px_rgba(214,168,95,0.15)] hover:-translate-y-1;
+  }
+
+  .text-glow-gold {
+    text-shadow: 0 0 20px rgba(214, 168, 95, 0.35);
+  }
+
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#F3F0EA] via-[#D6A85F] to-[#E5B869];
+  }
+}
