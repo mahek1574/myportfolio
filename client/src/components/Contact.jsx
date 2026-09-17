@@ -10,13 +10,14 @@ const Contact = () => {
     message: "",
   });
   const [status, setStatus] = useState(null);
+ const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setStatus("sending");
 
     axios
-      .post("http://localhost:5000/api/contact", formData)
+     .post(`${API_URL}/api/contact`, formData)
       .then((res) => {
         setStatus("success");
         setFormData({ name: "", email: "", message: "" });
