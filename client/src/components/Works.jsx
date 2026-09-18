@@ -22,7 +22,7 @@ const projects = [
     badge: "Flagship Full-Stack System",
     githubLink:
       "https://github.com/mahek1574/NODE_PROJECTS/tree/main/carepulse",
-    liveLink: "#",
+    liveLink: "https://carepulse-azure-nine.vercel.app/",
   },
   {
     id: 2,
@@ -33,8 +33,8 @@ const projects = [
     techStack: ["React.js", "JavaScript", "Tailwind CSS", "Framer Motion"],
     badge: "E-Commerce Experience",
     githubLink:
-      "https://github.com/mahek1574/portfolio/commit/fed4971d9f39f0779315b0b7a90e5dd827cda708",
-    liveLink: "#",
+      "https://github.com/mahek1574/portfolio/tree/main/Furnishop",
+    liveLink:"https://portfolio-black-ten-18.vercel.app/",
   },
   {
     id: 3,
@@ -66,7 +66,7 @@ const projects = [
     badge: "Interactive UI Gallery",
     githubLink:
       "https://github.com/mahek1574/portfolio/commit/3a2d01dffc1f4ad937dee51552ea2ae809f021b2",
-    liveLink: "#",
+    liveLink: "https://image-gallery-fzdf3hwpa-mahek-1574.vercel.app/",
   },
   {
     id: 5,

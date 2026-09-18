@@ -6,7 +6,7 @@ import { ArrowUpRight, Github, Linkedin, Twitter, Mail, Code2, Cpu, Database, Te
 const codeSnippets = {
   architecture: `{
   "developer": "Mahek",
-  "role": "Senior Full-Stack Developer",
+  "role": "Full-Stack Developer",
   "stack": {
     "frontend": ["React.js", "Tailwind CSS", "Framer Motion"],
     "backend": ["Node.js", "Express.js", "REST APIs"],
